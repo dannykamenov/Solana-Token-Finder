@@ -40,5 +40,7 @@ async function main() {
         }
     }, 10000); // Runs every 60 seconds, adjust as needed
 }
+
+// Run the main function
 main().catch(console.error);
 
