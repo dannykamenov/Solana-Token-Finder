@@ -60,7 +60,7 @@ async function main() {
     } catch (error) {
       console.error("Error scanning for tokens:", error);
     }
-  }, 10000); // Runs every 60 seconds, adjust as needed
+  }, 10000); 
 }
 
 main().catch(console.error);
