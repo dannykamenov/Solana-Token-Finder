@@ -34,7 +34,6 @@ async function main() {
         transaction.transaction.message.instructions.forEach((instruction) => {
             if (instruction.programId.equals(splTokenProgramId)) {
               // Further logic to verify if this instruction is a token creation
-              // This may involve checking specific instruction data
               if (instruction.parsed.type == "initializeAccount") {
                 console.log(
                   "Possible token creation detected:",
