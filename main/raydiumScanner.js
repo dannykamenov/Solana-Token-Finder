@@ -24,7 +24,7 @@ async function main() {
       
           if (transaction) {
             for (const instruction of transaction.transaction.message.instructions) {
-                console.log(instruction)
+                console.log(instruction.parsed)
             }
           }
         }
