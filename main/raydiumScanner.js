@@ -24,10 +24,8 @@ async function main() {
       
           if (transaction) {
             for (const instruction of transaction.transaction.message.instructions) {
-                if(instruction.programId.equals(liquidityPoolProgramId)) {
-                    if(instruction.parsed && instruction.parsed.type == 'initializeAccount') {
-                        console.log('Possible pool creation detected:', instruction.parsed.info)
-                    }
+                if(instruction.parsed && instruction.parsed.type == 'initializeAccount') {
+                    console.log('Possible pool creation detected:', instruction.parsed.info);
                 }
             }
           }
