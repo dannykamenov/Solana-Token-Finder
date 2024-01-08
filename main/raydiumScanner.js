@@ -15,7 +15,7 @@ async function main() {
 
 
   
-    // Function to scan for new pools created on Raydium
+    // Function to scan for new pools created on Raydium !
     async function scanForNewPools() {
         const signatures = await connection.getSignaturesForAddress(liquidityPoolProgramId, { limit: 10 });
       
