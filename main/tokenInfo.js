@@ -14,7 +14,7 @@ async function main(tokenId) {
 }
 
 async function displayInfo() {
-    const info = await main('EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx');
+    const info = await main('4ELBQuq3ivhLamfCT36As5sXLkQDWRJw1pJ9JVFLp6gK');
     const pairs = info.pairs;
     for (const pair of pairs) {
         console.log(pair);
