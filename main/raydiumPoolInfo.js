@@ -68,7 +68,7 @@ function getTokenAccounts(connection, owner) {
     });
 }
 // raydium pool id can get from api: https://api.raydium.io/v2/sdk/liquidity/mainnet.json
-var SOL_USDC_POOL_ID = "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2";
+var SOL_USDC_POOL_ID = "EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx";
 var OPENBOOK_PROGRAM_ID = new web3_js_1.PublicKey("srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX");
 function parsePoolInfo() {
     var _a, _b;
@@ -112,7 +112,7 @@ function parsePoolInfo() {
                     addedLpAccount = tokenAccounts.find(function (a) {
                         return a.accountInfo.mint.equals(poolState.lpMint);
                     });
-                    console.log("SOL_USDC pool info:", "pool total base " + base, "pool total quote " + quote, "base vault balance " + baseTokenAmount.value.uiAmount, "quote vault balance " + quoteTokenAmount.value.uiAmount, "base tokens in openorders " + openOrdersBaseTokenTotal, "quote tokens in openorders  " + openOrdersQuoteTokenTotal, "base token decimals " + poolState.baseDecimal.toNumber(), "quote token decimals " + poolState.quoteDecimal.toNumber(), "total lp " + poolState.lpReserve.div(denominator).toString(), "addedLpAmount " +
+                    console.log("SOL_USDC pool info:", '\n' , "pool total base " + base, '\n' , "pool total quote " + quote, '\n' , "base vault balance " + baseTokenAmount.value.uiAmount, '\n' , "quote vault balance " + quoteTokenAmount.value.uiAmount, '\n' , "base tokens in openorders " + openOrdersBaseTokenTotal, '\n' , "quote tokens in openorders  " + openOrdersQuoteTokenTotal, '\n' , "base token decimals " + poolState.baseDecimal.toNumber(), '\n' , "quote token decimals " + poolState.quoteDecimal.toNumber(), '\n' , "total lp " + poolState.lpReserve.div(denominator).toString(), '\n' , "addedLpAmount " +
                         ((addedLpAccount === null || addedLpAccount === void 0 ? void 0 : addedLpAccount.accountInfo.amount.toNumber()) || 0) / baseDecimal);
                     return [2 /*return*/];
             }
