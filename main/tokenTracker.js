@@ -57,7 +57,6 @@ async function fetchRaydiumAccounts(txId, connection) {
     console.table(displayData);
 }
 
-// Generate explorer url
 function generateExplorerUrl(txId) {
     return `https://solscan.io/tx/${txId}`;
 }
